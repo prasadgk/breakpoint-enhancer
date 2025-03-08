@@ -1,13 +1,21 @@
 {
   "name": "breakpoint-enhancer",
-  "displayName": "breakpoint-enhancer",
-  "description": "Extension to enhace the breakpoints by changing the line color and icon color/size.",
-  "version": "0.0.1",
+  "displayName": "Breakpoint Enhancer",
+  "description": "Extension to enhace the breakpoints by changing the line color and icon color/size for better visiblity.",
+  "publisher": "prasadgk",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "repository": "https://github.com/prasadgk/python-codelens/tree/develop",
   "engines": {
     "vscode": "^1.97.0"
   },
   "categories": [
+    "Debuggers",
     "Other"
+  ],
+  "keywords": [
+    "breakpoint",
+    "Debugger"
   ],
   "activationEvents": [
     "onDebug",

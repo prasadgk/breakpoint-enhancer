@@ -1,71 +1,60 @@
-# breakpoint-enhancer README
+# Breakpoint Enhancer for Visual Studio Code
 
-This is the README for your extension "breakpoint-enhancer". After writing up a brief description, we recommend including the following sections.
+Enhance your debugging experience in Visual Studio Code with improved breakpoint visibility and customization. This extension highlights the entire line when a breakpoint is added, ensuring clear visual cues. Users can customize the highlight color, text color, and icon size to match their preferences for a more personalized and efficient debugging workflow.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Highlighted Breakpoint Lines**:  
+  Breakpoint lines are highlighted with a semi-transparent background color for better visibility.
+- **Customizable Gutter Icons**:  
+  Replace the default small breakpoint dots with larger, clearer indicators.
+- **Theme Compatibility**:  
+  Works seamlessly with both dark and light themes.
+- **Real-Time Updates**:  
+  Changes reflect immediately as you add/remove breakpoints.
+- **Customizable Colors**:  
+  Configure the highlight color and icon appearance via VS Code settings.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open **Visual Studio Code**.
+2. Go to the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+3. Search for "Breakpoint Enhancer".
+4. Click **Install**.
+5. Reload VS Code when prompted.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Add these settings to your `settings.json`:
 
-For example:
+```json
+{
+  "breakpointEnhancer.highlightColor": "rgba(255,0,0,0.2)",
+  "breakpointEnhancer.textHighlightColor": "#FFFFFF",
+  "breakpointEnhancer.indicatorSize": 14
+}
+```
+Or you can change it directly from Settings of the Visual Studio Code
 
-This extension contributes the following settings:
+## Compatibility
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- Visual Studio Code 1.97+
+- All languages supported by VS Code debugger
+- Works with built-in and extension debuggers
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The background highlight color not showing behind the line number. Will be fixed in the future release.
+
+## Contributing
+
+Found an issue? Want to request a feature?
+Please [open an issue](https://github.com/prasadgk/breakpoint-enhancer/issues) on GitHub.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Please find the release history of Breakpoint Enhancer:
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of Breakpoint Enhancer
